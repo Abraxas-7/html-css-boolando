@@ -12,12 +12,12 @@
     --orange: #FF6900;
     --red: #FF0000;
     --green: #008000;
-    --black: #E7E7E7;
+    --black: #15110D;
 }
 
 /*---------- Debug ----------*/
 .debug{
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 
 /*---------- Text formatting ----------*/
@@ -25,14 +25,23 @@ body{
     font-family:  "Roboto", sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .txt-white{
     color: white;
 }
 
-.txt-black{
-    color: black
+.font-light{
+    font-weight: 200;
 }
-
 /*---------- Utility flex ----------*/
 .d-flex{
     display: flex;
@@ -46,19 +55,23 @@ body{
     justify-content: center;
 }
 
+.j-end{
+    justify-content: end;
+}
+
 .a-center{
     align-items: center;
 }
 
-.f-column{
+.d-column{
     flex-direction: column;
 }
 
-.f-row{
+.d-row{
     flex-direction: row;
 }
 
-.r-reverse{
+.d-row-reverse{
     flex-direction: row-reverse;
 }
 
@@ -66,12 +79,57 @@ body{
     flex-wrap: wrap;
 }
 
+/*---------- Container ---------*/
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*--------------- Index ---------------*/
+
 /*---------- Header ----------*/
+header{
+    background-color: var(--orange);
+    height: 70px;
+    width: 100%;
+    position: sticky;
+}
+
+.logo > img{
+    height: 28px;
+}
+
+header > div > div{
+    width: 25%;
+}
+
+.gender-list > a{
+    padding-right: 5px;
+}
+
+.utility-items > a{
+    padding-left: 8px;
+}
+
+.shadow{
+    box-shadow: 0px 0px 10px 0px #111; 
+}
 
 /*---------- Main ----------*/
+main{
+    height: 600px;
+}
+
+
+
 
 /*---------- Footer ----------*/
-
+footer{
+    background-color: var(--black);
+    height: 80px;
+}
 
 
 
