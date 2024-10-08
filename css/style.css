@@ -3,10 +3,11 @@
     mantenendo ordine e renderlo intuitivo, sicuro
     migliorabile
 
-    pre bonus "pagine di dettaglio", mettero il
-    css del bonus all'interno di questo file 
-    vedro poi cosa uscirà e se riesco a mantenere
-    la comprensività
+    post bonus "pagine di dettaglio", tenuto il css
+    e provato a tenere il più organizzato possibile
+    con più pagine devo organizzarmi bene con le 
+    classi magari organizzandole prima in base alla 
+    mole di codice
 */
 
 /*--------------- Generals ---------------*/
@@ -38,8 +39,9 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
     font-weight: bold;
+    color:inherit;
+    font: inherit;
 }
 
 a:hover{
@@ -61,6 +63,10 @@ a:hover{
 
 .j-space-between{
     justify-content: space-between;
+}
+
+.j-space-around{
+    justify-content: space-around;
 }
 
 .j-center{
@@ -112,6 +118,11 @@ header{
     z-index: 2000;
 }
 
+header a{
+    color: white;
+}
+
+
 .logo > img{
     height: 28px;
 }
@@ -135,11 +146,18 @@ header > div > div{
 /*---------- Main ----------*/
 main{
     padding: 50px 0;
+    min-height: 100vh;
 }
 
 main p{
     font-size: 14px;
 }
+
+main a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .item{
     width: 380px;
     margin-bottom: 25px;
@@ -241,6 +259,10 @@ footer{
     height: 100px;
 }
 
+footer a{
+    color: white;
+}
+
 #footer-left{
     line-height: 1.8;
 }
@@ -258,5 +280,38 @@ footer{
 
 
 
+/*--------------- Pagina di dettaglio ---------------*/
+.stop{
+    overflow: hidden;
+}
 
+.description{
+    width: 380px;
+}
 
+.brand{
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+.garment-name{
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.price{
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-bottom: 18px;
+}
+
+.info, .info *{
+    padding-bottom: 4px;
+}
+
+footer.eng-or-sp{
+    position: sticky;
+    bottom: 0;
+}

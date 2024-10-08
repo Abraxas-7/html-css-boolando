@@ -1,0 +1,121 @@
+<!-- ho allungato la pagina dando un vh100 al main perche mi dava fastidio che ci fosse poco contenuto 
+    e che il footer fosse sopra la fine della pagina poi ho bloccato lo scroll, se si ingrandisce 
+    si trovano problemi perché si sovrappone tutto, ma per questo semplice esempio non dovrebbe 
+    essere un problema troppo grosso
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Boolando</title>
+    </head>
+    
+    <body class="stop">
+        <header class="debug d-flex a-center shadow">
+            <div class="debug container d-flex j-space-between a-center">
+                <div class="gender-list">
+                    <a href="#">Donna</a>
+                    <a href="#">Uomo</a>
+                    <a href="#">Bambini</a>
+                </div>
+
+                <div class="logo d-flex j-center a-center">
+                    <img src="../img/boolean-logo.png" alt="Logo">
+                </div>
+
+                <div class="utility-items d-flex j-end">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="debug container d-flex j-space-around f-wrap">
+                <div class="image">
+                    <img class="hover-img" src="../img/6b.webp" alt="Foto capo d'abigliamento">
+                    <img class="base-img" src="../img/6.webp" alt="Foto capo d'abigliamento">
+                </div>
+                <div class="debug description d-flex d-column j-space-around">
+                    <div class="debug">
+                        <p class="brand">Esprit</p>
+                        <h4 class="garment-name">MAGLIONE - BLACK</h4>
+                        <p class="price"><span class="current-price">14,99 €</span> <span class="original-price"> 29.99 €</span></p>
+    
+                    </div>
+                    <div class="debug">
+                        <div class="info">
+                            <h4>Composizione e istruzioni di lavaggio</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, nostrum quos laudantium vel earum delectus obcaecati quae debitis eligendi.</p>
+                        </div>
+                        <div class="info">
+                            <h4>Dettagli prodotto</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, nostrum quos laudantium vel earum delectus obcaecati quae debitis eligendi.</p>
+                        </div>
+                        <div class="info">
+                            <h4>Taglia e fit</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, nostrum quos laudantium vel earum delectus obcaecati quae debitis eligendi.</p>
+                        </div>
+                        <div class="info">
+                            <h4>Standard del prodotto</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui architecto, nostrum quos laudantium vel earum delectus obcaecati quae debitis eligendi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="debug d-flex eng-or-sp">
+            <div class="debug container d-flex a-center j-space-between">
+                <div id="footer-left" class="debug">
+                    <h3 class="txt-white">Boolando s.r.l</h3>
+                    <div class="font-light">
+                        <a href="#" class="font-light">Informazioni Legali  </a>
+                        <a href="#" class="font-light">Informativa sulla privacy  </a>
+                        <a href="#" class="font-light">Diritto di recesso  </a>
+                    </div>
+                </div>
+
+                <div id="footer-right" class="debug d-flex d-column">
+                    <h4 class="txt-white">Trovaci anche su</h4>
+                    
+                    <div class="social" class="d-flex j-end">
+                        <a href="#">
+                            <i class="fa-brands fa-square-twitter"> </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook"> </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram"> </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-pinterest"> </i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-youtube"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
