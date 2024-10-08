@@ -1,3 +1,14 @@
+/*
+    ho provato ad organizzarlo il meglio possibile,
+    mantenendo ordine e renderlo intuitivo, sicuro
+    migliorabile
+
+    pre bonus "pagine di dettaglio", mettero il
+    css del bonus all'interno di questo file 
+    vedro poi cosa uscirà e se riesco a mantenere
+    la comprensività
+*/
+
 /*--------------- Generals ---------------*/
 
 /*---------- Reset ----------*/
@@ -16,9 +27,9 @@
 }
 
 /*---------- Debug ----------*/
-.debug{
+/* .debug{
     border: 1px solid blue;
-}
+} */
 
 /*---------- Text formatting ----------*/
 body{
@@ -42,6 +53,7 @@ a:hover{
 .font-light{
     font-weight: 200;
 }
+
 /*---------- Utility flex ----------*/
 .d-flex{
     display: flex;
@@ -87,6 +99,7 @@ a:hover{
 }
 
 
+
 /*--------------- Index ---------------*/
 
 /*---------- Header ----------*/
@@ -95,6 +108,8 @@ header{
     height: 70px;
     width: 100%;
     position: sticky;
+    top: 0;
+    z-index: 2000;
 }
 
 .logo > img{
@@ -119,17 +134,128 @@ header > div > div{
 
 /*---------- Main ----------*/
 main{
-    height: 600px;
+    padding: 50px 0;
 }
 
+main p{
+    font-size: 14px;
+}
+.item{
+    width: 380px;
+    margin-bottom: 25px;
+}
 
+.image{
+    position: relative;
+}
 
+.image > img{
+    width: 100%;
+    height: 600px;
+    max-width: 100%;
+}
+
+.badge{
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    bottom: 35px;
+    z-index: 1000;
+}
+
+.heart::after{
+    content: '\2665';
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    right: 0;
+    font-size: 32px;
+    padding: 4px 12px;
+    z-index: 1000;
+}
+
+div.heart:hover{
+    color: var(--red);
+}
+
+.sales50:before{
+    content: '-50%';
+    background-color: var(--red);
+    color: white;
+    padding: 4px 10px 4px 10px;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: 800;
+}
+
+.sales30:before{
+    content: '-30%';
+    background-color: var(--red);
+    color: white;
+    padding: 4px 10px 4px 10px;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: 800;
+}
+
+.eco:after{
+    content: 'Sostenibilità';
+    background-color: var(--green);
+    color: white;
+    padding: 4px 10px 4px 10px;
+    font-size: 14px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.current-price{
+    color: var(--red);
+    font-weight: 800;
+    padding-right: 2px;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+/* cambio immagine */
+.hover.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.base-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.base-img:hover{
+    opacity: 0;
+}
 
 /*---------- Footer ----------*/
 footer{
     background-color: var(--black);
-    height: 80px;
+    height: 100px;
 }
+
+#footer-left{
+    line-height: 1.8;
+}
+
+#footer-left > div > a{
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#footer-right > div > a{
+    padding-right: 10px;
+    line-height: 2;
+}
+
 
 
 

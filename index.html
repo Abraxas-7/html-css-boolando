@@ -1,5 +1,9 @@
 
-<!-- HO AVUTO UN PICCOLO IMPREVISTO, CONSEGNA PARZIALE RECUPERO QUESTA SERA -->
+<!-- Consegna pre bonus "pagina di dettaglio", completo sta notte
+    per il cambio immagine ho sovrapposto le immagini e creato un hover che imposta l'opacità della prima a 0
+    non so se è il metodo giusto o ottimale però la ritengo un opzione valida per ora
+    per quanto riguarda il bonus del cuore rosso ho usato un hover che cambia colore al carattere speciale 
+    invece per quanto riguarda il bonus della pagina di dettaglio la faccio e consegno più tardi che ho dei piccoli impegni imprevisti -->
 
 <!DOCTYPE html>
 
@@ -18,6 +22,7 @@
     </head>
     
     <body>
+        <!-- header fissato in alto in caso di scorrimento flexxato per il layout icone prese da font awesome -->
         <header class="debug d-flex a-center shadow">
             <div class="debug container d-flex j-space-between a-center">
                 <div class="gender-list">
@@ -46,40 +51,126 @@
             </div>
         </header>
         
+        <!-- main div organizzati contenenti le immagini e le descrizioni degli item con badge modulari e prezzi facilmente modificabili -->
         <main class="debug">
-            <div class="debug container">
+            <div class="debug container d-flex f-wrap j-space-between">
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/1b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/1.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge sales50 eco"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Levi's</p>
+                        <h4>RELAXED FIT TEE UNISEX</h4>
+                        <p><span class="current-price">14,99 €</span> <span class="original-price"> 29.99 €</span></p>
+                    </div>
+                </div>
+
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/2b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/2.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge sales30"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Guess</p>
+                        <h4>ROSES TEE</h4>
+                        <p><span class="current-price">20,99 €</span> <span class="original-price"> 29.99 €</span></p>
+                    </div>
+                </div>
+
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/3b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/3.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge sales30"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Come Zucchero Filato</p>
+                        <h4>VOGLIA DI COLORI PASTELLO</h4>
+                        <p><span class="current-price">129.99 €</span> <span class="original-price"> 184.99 €</span></p>
+                    </div>
+                </div>
+
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/4b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/4.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge sales50 eco"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Levi's</p>
+                        <h4>TEE UNISEX</h4>
+                        <p><span class="current-price">14,99 €</span> <span class="original-price"> 29.99 €</span></p>
+                    </div>
+                </div>
+
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/5b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/5.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Maya Deluxe</p>
+                        <h4>STRIPE BODICE</h4>
+                        <p><span class="current-price">99,99 €</span> <span class="original-price"></span></p>
+                    </div>
+                </div>
+
+                <div class="debug item">
+                    <div class="debug image">
+                        <img class="hover-img" src="img/6b.webp" alt="Foto capo d'abigliamento">
+                        <img class="base-img" src="img/6.webp" alt="Foto capo d'abigliamento">
+                        <div class="debug badge eco"> </div>
+                        <div class="debug heart"> </div>
+                    </div>
+                    <div class="debug item-decription">
+                        <p>Esprit</p>
+                        <h4>MAGLIONE - BLACK</h4>
+                        <p><span class="current-price">29,99 €</span> <span class="original-price"></span></p>
+                    </div>
+                </div>
 
             </div>
         </main>
 
+        <!-- footer molto semplice flexato con link informativi e social -->
         <footer class="debug d-flex">
             <div class="debug container d-flex a-center j-space-between">
-                <div id="footer-left">
+                <div id="footer-left" class="debug">
                     <h3 class="txt-white">Boolando s.r.l</h3>
                     <div class="font-light">
-                        <a href="#" class="font-light">Informazioni Legali</a>
-                        <a href="#" class="font-light">Informativa sulla privacy</a>
-                        <a href="#" class="font-light">Diritto di recesso</a>
+                        <a href="#" class="font-light">Informazioni Legali  </a>
+                        <a href="#" class="font-light">Informativa sulla privacy  </a>
+                        <a href="#" class="font-light">Diritto di recesso  </a>
                     </div>
                 </div>
 
-                <div id="footer-right" class="debug">
+                <div id="footer-right" class="debug d-flex d-column">
                     <h4 class="txt-white">Trovaci anche su</h4>
-                    <div class="social" class="d-flex j-space-between">
+                    
+                    <div class="social" class="d-flex j-end">
                         <a href="#">
-                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-square-twitter"> </i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-square-facebook"> </i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-instagram"> </i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-square-pinterest"></i>
+                            <i class="fa-brands fa-square-pinterest"> </i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-square-youtube"></i>
+                            <i class="fa-brands fa-square-youtube"> </i>
                         </a>
                     </div>
                 </div>
