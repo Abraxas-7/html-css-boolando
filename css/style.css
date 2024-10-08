@@ -1,0 +1,78 @@
+/*--------------- Generals ---------------*/
+
+/*---------- Reset ----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------- Custum properties ---------*/
+:root{
+    --orange: #FF6900;
+    --red: #FF0000;
+    --green: #008000;
+    --black: #E7E7E7;
+}
+
+/*---------- Debug ----------*/
+.debug{
+    border: 1px solid red;
+}
+
+/*---------- Text formatting ----------*/
+body{
+    font-family:  "Roboto", sans-serif;
+}
+
+.txt-white{
+    color: white;
+}
+
+.txt-black{
+    color: black
+}
+
+/*---------- Utility flex ----------*/
+.d-flex{
+    display: flex;
+}
+
+.j-space-between{
+    justify-content: space-between;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.f-column{
+    flex-direction: column;
+}
+
+.f-row{
+    flex-direction: row;
+}
+
+.r-reverse{
+    flex-direction: row-reverse;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+/*---------- Header ----------*/
+
+/*---------- Main ----------*/
+
+/*---------- Footer ----------*/
+
+
+
+
+
